@@ -102,6 +102,7 @@ public class SecondActivity extends BaseActivity {
                         imgContent, ((BitmapDrawable) imgContent.getDrawable()).getBitmap(), 0, 0);
                 ActivityCompat.startActivity(this, new Intent(this, ThirdAcitivity.class),
                         compat3.toBundle());
+
                 break;
             case R.id.btn4:
                 //单一makeSceneTransitionAnimation
