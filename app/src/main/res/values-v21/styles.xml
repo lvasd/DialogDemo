@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="AppTheme" parent="ParentTheme">
+        <!--设置为true-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>
