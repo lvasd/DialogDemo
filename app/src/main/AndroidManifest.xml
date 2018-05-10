@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".ThirdAcitivity" />
-        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".DialogFragmentActivity" />
+        <activity android:name=".dialogfragment.RecyclerDialogFragment" />
     </application>
 
 </manifest>

@@ -11,8 +11,8 @@ import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
-    @BindView(R.id.main_btn_start)
-    Button mainBtnStart;
+    @BindView(R.id.main_btn1)
+    Button mainBtn1;
     @BindView(R.id.main_btn2)
     Button mainBtn2;
 
@@ -36,16 +36,16 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.main_btn_start, R.id.main_btn2})
+    @OnClick({R.id.main_btn1, R.id.main_btn2})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.main_btn_start:
-                //startActivity添加动画效果
-                startActivity(new Intent(mContext, SecondActivity.class));
+            case R.id.main_btn1:
+                //最常用的AlertDialog
+                startActivity(new Intent(mContext, AlertDialogActivity.class));
                 break;
             case R.id.main_btn2:
-
-
+                //DialogFragment
+                startActivity(new Intent(mContext, DialogFragmentActivity.class));
                 break;
         }
     }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/dialog_bottom_tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_round_rectangle"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="取消"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_white_round_rectangle"
+        app:layout_constraintBottom_toTopOf="@id/dialog_bottom_tv_cancel"
+        app:layout_constraintEnd_toEndOf="@id/dialog_bottom_tv_cancel"
+        app:layout_constraintStart_toStartOf="@id/dialog_bottom_tv_cancel">
+
+        <TextView
+            android:id="@+id/dialog_bottom_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="选择图片"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_bottom_tv_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="拍照"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_bottom_tv_title" />
+
+        <TextView
+            android:id="@+id/dialog_bottom_tv_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="相册"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_bottom_tv_camera" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:background="@color/color_f4"
+            app:layout_constraintBottom_toTopOf="@id/dialog_bottom_tv_camera"
+            app:layout_constraintTop_toBottomOf="@id/dialog_bottom_tv_title" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:background="@color/color_f4"
+            app:layout_constraintBottom_toTopOf="@id/dialog_bottom_tv_photo"
+            app:layout_constraintTop_toBottomOf="@id/dialog_bottom_tv_camera" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -13,7 +13,11 @@
 
     </style>
 
-
+    <!--dialog 底部弹出动画-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style>
 
 
 
