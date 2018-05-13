@@ -109,7 +109,6 @@ public class AlertDialogActivity extends BaseActivity {
 
     private void showSingleDialog() {
 
-
         AlertDialog dialog = new AlertDialog.Builder(mContext)
                 .setTitle("单选dialog")
                 .setSingleChoiceItems(items, pos, (dialog1, which) -> pos = which)
@@ -171,7 +170,7 @@ public class AlertDialogActivity extends BaseActivity {
                 .setTitle("这是标题")
                 .setIcon(R.mipmap.ic_pic_test)
                 .setMessage("这是内容")
-                .setPositiveButton("确认", (dialog, which) -> showToast("确认"))//listener可传 null
+                .setPositiveButton("确认", (dialog, which) -> showToast("确认"))
                 .setNegativeButton("取消", (dialog, which) -> showToast("取消"))
                 .create();//listener可传 null
         alertDialog.show();

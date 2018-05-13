@@ -1,10 +1,14 @@
 package com.lj.demo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import android.widget.Button;
 
 import com.lj.demo.base.BaseActivity;
+
+import java.io.File;
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -36,7 +40,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.main_btn1, R.id.main_btn2})
+    @OnClick({R.id.main_btn1, R.id.main_btn2, R.id.main_btn3})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.main_btn1:
@@ -46,6 +50,11 @@ public class MainActivity extends BaseActivity {
             case R.id.main_btn2:
                 //DialogFragment
                 startActivity(new Intent(mContext, DialogFragmentActivity.class));
+                break;
+            case R.id.main_btn3:
+                //DialogFragment
+                startActivity(new Intent(mContext, BottomSheetActivity.class));
+
                 break;
         }
     }
