@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".AlertDialogActivity" />
         <activity android:name=".DialogFragmentActivity" />
-        <activity android:name=".dialogfragment.RecyclerDialogFragment" />
         <activity android:name=".BottomSheetActivity" />
         <activity android:name=".bottomsheet.BottomSheetsActivity" />
     </application>
