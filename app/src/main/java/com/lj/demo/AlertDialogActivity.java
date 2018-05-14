@@ -71,8 +71,6 @@ public class AlertDialogActivity extends BaseActivity {
             case R.id.btn5:
                 showMoreDialog();
                 break;
-
-
         }
     }
 
